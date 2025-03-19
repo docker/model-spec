@@ -28,7 +28,7 @@ This section defines the `application/vnd.docker.ai.model.config.v1+json` media 
   "config": {
     "architecture": "llama",
     "format": "gguf",
-    "parameters": "50000000000",
+    "parameter_count": "1.10 B",
     "quantization": "Q4_0",
     "size": "635992801" 
   },
