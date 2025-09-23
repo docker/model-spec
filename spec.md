@@ -10,7 +10,9 @@ All layers blobs SHOULD contain the contents of a single file. Layers SHOULD NOT
 
 - `application/vnd.docker.ai.gguf.v3` - A file adhering to version 3 of the [GGUF specification](https://github.com/ggml-org/ggml/blob/master/docs/gguf.md), containing a tensor model.
 - `application/vnd.docker.ai.gguf.v3.lora` - A file adhering to version 3 of the GGUF specification, containing a LoRA adapter.
+- `application/vnd.docker.ai.gguf.v3.mmproj` - A file containing multimodal projector weights in GGUF format, used to bridge vision and language models by projecting visual features into the language model's embedding space.
 - `application/vnd.docker.ai.license` - Plain text file containing a software license.
+- `application/vnd.docker.ai.chat.template.jinja` – A text file containing a [Jinja](https://jinja.palletsprojects.com/en/stable/) prompt template, used to define chat/inference formatting.
 
 ## Example Manifest
 
@@ -25,7 +27,7 @@ All layers blobs SHOULD contain the contents of a single file. Layers SHOULD NOT
   },
   "layers": [
     {
-      "mediaType": "application/vnd.docker.ai.gguf.model.v3",
+      "mediaType": "application/vnd.docker.ai.gguf.v3",
       "size": 637699456,
       "digest": "sha256:2af3b81862c6be03c769683af18efdadb2c33f60ff32ab6f83e42c043d6c7816"
     },
@@ -37,4 +39,3 @@ All layers blobs SHOULD contain the contents of a single file. Layers SHOULD NOT
   ]
 }
 ```
-
