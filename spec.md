@@ -12,7 +12,7 @@ All layers blobs SHOULD contain the contents of a single file. Layers SHOULD NOT
 - `application/vnd.docker.ai.gguf.v3.lora` - A file adhering to version 3 of the GGUF specification, containing a LoRA adapter.
 - `application/vnd.docker.ai.gguf.v3.mmproj` - A file containing multimodal projector weights in GGUF format, used to bridge vision and language models by projecting visual features into the language model's embedding space.
 - `application/vnd.docker.ai.license` - Plain text file containing a software license.
-- `application/vnd.docker.ai.chat.template.jinja` – A text file containing a [Jinja](https://jinja.palletsprojects.com/en/stable/) prompt template, used to define chat/inference formatting.
+- `application/vnd.docker.ai.chat.template.jinja` - A text file containing a [Jinja](https://jinja.palletsprojects.com/en/stable/) prompt template, used to define chat/inference formatting.
 
 ## Example Manifest
 
